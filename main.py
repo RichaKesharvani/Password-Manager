@@ -71,6 +71,12 @@ def on_leave(e):
 def show_add_tooltip(event=None):
     add_button_tooltip.config(text="Click to save the entered details")
 
+def handle_enter(event, current_widget, next_widget):
+    # Move to the next widget or trigger the function if it's the last
+    current_widget.focus()
+    if next_widget:
+        next_widget.focus()
+    return 'break'  # Prevent the default behavior
 
 window = Tk()
 window.title("Password Manager")
@@ -121,18 +127,14 @@ email_entry.grid(row=2, column=1, columnspan=2, pady=5, padx=5, sticky="w")
 password_entry = ttk.Entry(window, width=30, style='TEntry')
 password_entry.grid(row=3, column=1, pady=5, padx=5, sticky="w")
 
-
-
 copy_icon = PhotoImage(file="copy_icon.png")
 small_copy_icon = copy_icon.subsample(0, 0)
-
 
 # Buttons
 generate_password_button = Button(window, text="Generate Password", command=generate_password, bg='#0078d7', fg='white', font=('Arial', 12, 'bold'))
 generate_password_button.grid(row=3, column=2, pady=5, padx=5, sticky="w")
 generate_password_button.bind("<Enter>", on_enter)
 generate_password_button.bind("<Leave>", on_leave)
-
 
 copy_password_button = Button(window, image=small_copy_icon, text=" Copy password", compound=LEFT, width=-18, command=copy_password, bg='#0078d7', fg='white', font=('Arial', 12, 'bold'))
 copy_password_button.grid(row=4, column=1, pady=5, sticky="w")  # Removed padx=5
@@ -148,5 +150,9 @@ add_button.bind("<Leave>", lambda event: add_button_tooltip.config(text=""))  # 
 add_button_tooltip = ttk.Label(window, background='#e0f7fa', font=('Arial', 10), anchor='w')
 add_button_tooltip.grid(row=5, column=2, sticky="w")
 
+# Bind Enter key to navigate
+website_entry.bind("<Return>", lambda e: handle_enter(e, website_entry, email_entry))
+email_entry.bind("<Return>", lambda e: handle_enter(e, email_entry, password_entry))
+password_entry.bind("<Return>", lambda e: handle_enter(e, password_entry, add_button))
 
 window.mainloop()
