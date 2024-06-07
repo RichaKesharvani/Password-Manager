@@ -146,6 +146,8 @@ add_button.grid(row=4, column=2, pady=10, sticky="w")
 add_button.bind("<Enter>", show_add_tooltip)  # Bind Enter event to show tooltip
 add_button.bind("<Leave>", lambda event: add_button_tooltip.config(text=""))  # Clear tooltip on Leave event
 
+butto_quuit = Button(window,text="Quit",command=window.destroy)
+butto_quuit.grid(row=4, column=3, pady=10, sticky="w")
 
 add_button_tooltip = ttk.Label(window, background='#e0f7fa', font=('Arial', 10), anchor='w')
 add_button_tooltip.grid(row=5, column=2, sticky="w")
