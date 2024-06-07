@@ -146,7 +146,7 @@ add_button.grid(row=4, column=2, pady=10, sticky="w")
 add_button.bind("<Enter>", show_add_tooltip)  # Bind Enter event to show tooltip
 add_button.bind("<Leave>", lambda event: add_button_tooltip.config(text=""))  # Clear tooltip on Leave event
 
-# Create a label for the tooltip
+
 add_button_tooltip = ttk.Label(window, background='#e0f7fa', font=('Arial', 10), anchor='w')
 add_button_tooltip.grid(row=5, column=2, sticky="w")
 
