@@ -53,14 +53,14 @@ The Password Manager application is designed to offer a convenient solution for 
 
 1. Click on the **"Search Entry"** button.
 2. A new window will appear.
-3. Enter the website or email you want to search for and click **"Search"**.
+3. Enter the website and email you want to search for and click **"Search"**.
 4. The application will display matching entries from the `data.txt` file.
 
 ### Delete Entry
 
 1. Click on the **"Delete Entry"** button.
 2. A new window will appear.
-3. Enter the website or email for the entry you want to delete and click **"Delete"**.
+3. Enter the website and email for the entry you want to delete and click **"Delete"**.
 4. The application will remove the matching entry from the `data.txt` file.
 
 ### Quitting the Application
