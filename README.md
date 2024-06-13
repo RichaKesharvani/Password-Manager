@@ -69,17 +69,12 @@ The Password Manager application is designed to offer a convenient solution for 
 
 ## Screenshots
 
-   <p align="center">
-   <img src="https://github.com/RichaKesharvani/Password-Manager/assets/121665444/5bb0b860-55e8-4df7-8e38-f78ab201bdfa" alt="Generate Password">
-   </p>
-   <p align="center">
-   <img src="https://github.com/RichaKesharvani/Password-Manager/assets/121665444/f3df77bf-8c3f-4e77-b12d-eb45107b3dbe" alt="Copy Password">
-   </p>
-   <p align="center">
-   <img src="https://github.com/RichaKesharvani/Password-Manager/assets/121665444/dc5e3c6b-e09b-4fee-9cea-1daa69a25131" alt="Save Entry">
-   </p>
-   <p align="center">
-   <img src="https://github.com/RichaKesharvani/Password-Manager/assets/121665444/b7b8d10b-63ad-4036-bf74-d947d2bb6040" alt="Search Entry">
-   <p align="center">
-   <img src="https://github.com/RichaKesharvani/Password-Manager/assets/121665444/8bd9d930-765a-4d11-8724-abb4fe13d1d0" alt="Delete Entry">
-   </p>
+   <img src="https://github.com/RichaKesharvani/Password-Manager/assets/121665444/5bb0b860-55e8-4df7-8e38-f78ab201bdfa" alt="Generate Password" width="600">
+
+   <img src="https://github.com/RichaKesharvani/Password-Manager/assets/121665444/f3df77bf-8c3f-4e77-b12d-eb45107b3dbe" alt="Copy Password" width="600">
+
+   <img src="https://github.com/RichaKesharvani/Password-Manager/assets/121665444/dc5e3c6b-e09b-4fee-9cea-1daa69a25131" alt="Save Entry" width="600">
+
+   <img src="https://github.com/RichaKesharvani/Password-Manager/assets/121665444/b7b8d10b-63ad-4036-bf74-d947d2bb6040" alt="Search Entry" width="600">
+
+   <img src="https://github.com/RichaKesharvani/Password-Manager/assets/121665444/8bd9d930-765a-4d11-8724-abb4fe13d1d0" alt="Delete Entry" width="600">
