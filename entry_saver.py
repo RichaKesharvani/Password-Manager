@@ -22,7 +22,7 @@ class EntrySaver:
         password = self.password_entry.get()
 
         if len(website) == 0 or len(email) == 0 or len(password) == 0:
-            self.messagebox.showerror(title="Error", message="Please enter all details")
+            messagebox.showerror(title="Error", message="Please enter all details")
         else:
             with open("data.txt", "r") as data_file:
                 for line in data_file:
